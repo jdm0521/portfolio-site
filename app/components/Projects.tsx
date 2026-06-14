@@ -5,7 +5,7 @@ const projects = [
     description:
       "Built reusable Terraform modules supporting dev, stage, and prod environments with Azure and GitHub Actions.",
     tech: ["Azure", "Terraform", "GitHub Actions"],
-    github: "https://github.com/YOUR_USERNAME/terraform-multi-env",
+    github: "https://github.com/jdm0521/terraform-enterprise-lab",
   },
   {
     title: "Azure Networking Lab",
@@ -14,7 +14,7 @@ const projects = [
     description:
       "Designed enterprise-style networking using VNets, NSGs, subnets, and security best practices.",
     tech: ["Azure", "Networking", "Security"],
-    github: "https://github.com/YOUR_USERNAME/azure-networking-lab",
+    github: "https://github.com/jdm0521/Azure-Networking-Deep-Dive-Enterprise-Hub-Spoke",
   },
 ];
 
