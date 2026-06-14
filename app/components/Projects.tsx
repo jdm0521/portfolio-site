@@ -1,3 +1,4 @@
+import Image from "next/image";
 const projects = [
   {
     title: "Terraform Multi-Environment Mastery",
@@ -8,6 +9,8 @@ const projects = [
   },
   {
     title: "Azure Networking Lab",
+    image: "/diagrams/azure-networking.png",
+    
     description:
       "Designed enterprise-style networking using VNets, NSGs, subnets, and security best practices.",
     tech: ["Azure", "Networking", "Security"],
@@ -39,18 +42,15 @@ export default function Projects() {
               duration-300
               "
           >
-              <div className="h-40 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl mb-6 border border-slate-700 flex items-center justify-center">
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div className="absolute w-16 h-16 rounded-lg border border-blue-500" />
-
-                <div className="absolute left-10 w-8 h-8 rounded border border-blue-400" />
-
-                <div className="absolute right-10 w-8 h-8 rounded border border-blue-400" />
-
-                <div className="absolute h-px w-24 bg-blue-500" />
+              <div className="relative h-40 mb-6 rounded-xl overflow-hidden border border-slate-700">
+                <Image
+                  src="/diagrams/azure-networking.png"
+                  alt="Azure Networking Architecture"
+                  fill
+                  className="object-cover"
+                />
               </div>
-            </div>
-            
+
               {project.title === "Terraform Multi-Environment Mastery" && (
               <div className="mb-4">
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-500 px-3 py-1 rounded-full text-sm font-medium">
